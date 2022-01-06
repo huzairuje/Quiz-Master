@@ -13,7 +13,7 @@ COPY . .
 
 ##Fix go mod cant download without using proxy
 ENV GOPROXY="https://goproxy.cn,direct"
-q
+
 # Build the binary
 RUN export CGO_ENABLED=0 && go build -o /go/bin/quiz_master
 
