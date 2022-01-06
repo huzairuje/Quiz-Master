@@ -1,3 +1,7 @@
+/*
+Package data
+Copyright © 2022 muhammad huzair <muhammadhuzair@gmail.com>
+*/
 package data
 
 import "fmt"

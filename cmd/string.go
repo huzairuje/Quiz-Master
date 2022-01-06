@@ -1,3 +1,7 @@
+/*
+Package cmd
+Copyright © 2022 muhammad huzair <muhammadhuzair@gmail.com>
+*/
 package cmd
 
 const (

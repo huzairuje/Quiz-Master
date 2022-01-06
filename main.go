@@ -1,6 +1,5 @@
 /*
 Copyright © 2022 muhammad huzair <muhammadhuzair@gmail.com>
-
 */
 package main
 
@@ -173,6 +172,9 @@ func runCommand(commandStr string) error {
 		return nil
 	default:
 		_, err := fmt.Fprintf(os.Stdout, "%s is unknown command\n", arrCommandStr[0])
+		_, err = fmt.Fprintf(os.Stdout, "this is the list command you can use \n")
+		_, err = fmt.Fprintln(os.Stdout, cmd.HelpString)
+		_, err = fmt.Fprintf(os.Stdout, "you can list the command of the quizmaster by typing help \n")
 		if err != nil {
 			return err
 		}
