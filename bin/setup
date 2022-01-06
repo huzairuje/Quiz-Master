@@ -1,0 +1,4 @@
+echo "download, install and verify dependencies"
+go mod download
+go mod tidy
+go mod verify
