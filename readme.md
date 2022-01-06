@@ -44,9 +44,12 @@ you can run the program with the following way:
         $ ./bin/quiz_master
         ```
  c. by running the program by this command (docker way):
-    ```
-    $ docker run -it -v quiz_master
-    ```
+ ```shell
+$ docker build -f Dockerfile -t quiz_master .
+```  
+ ```shell
+$ docker run quizmaster:latest
+```
 
 ## 2. Usage
 you can use the command by typing this command
