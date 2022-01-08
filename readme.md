@@ -68,6 +68,12 @@ and
 $ ./quiz_master
 ```
 
+after you see this result
+
+```shell
+Welcome to Quiz Master!
+```
+
 you can list the command by typing this command
 
 ```shell
