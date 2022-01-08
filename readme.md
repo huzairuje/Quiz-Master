@@ -52,8 +52,20 @@ $ docker run quizmaster:latest
 ```
 
 ## 2. Usage
-you can use the command by typing this command
+you can running the program itself by type this command
+```shell
+$ ./bin/quiz_master
 ```
+or
+```
+$ cd ROOT_PROJECT_FOLDER/bin
+```shell
+and
+```
+$ ./quiz_master
+```shell
+you can list the command by typing this command
+```shell
 $ help
 ```
 the result is
