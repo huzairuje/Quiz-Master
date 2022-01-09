@@ -197,6 +197,7 @@ func DeleteQuestion(No string) string {
 				listQuiz = append(listQuiz[:i], listQuiz[i+1:]...)
 				response := fmt.Sprintf(`Question no %v was deleted!`, No)
 				println(response)
+				return response
 			}
 		}
 	}
