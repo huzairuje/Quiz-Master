@@ -6,11 +6,11 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/quipper/quiz_master/data"
 	"os"
 	"os/exec"
-	"strconv"
 	"strings"
+
+	"github.com/quipper/quiz_master/data"
 
 	"github.com/quipper/quiz_master/cmd"
 )
@@ -75,7 +75,6 @@ func runCommand(commandStr string) error {
 			return err
 		}
 		id = strings.TrimSuffix(id, "\n")
-		idInt, err := strconv.Atoi(id)
 		//question
 		_, err = fmt.Fprintln(os.Stdout, "Question: ")
 		if err != nil {
@@ -96,7 +95,7 @@ func runCommand(commandStr string) error {
 			return err
 		}
 		answer = strings.TrimSuffix(answer, "\n")
-		data.CreateQuestion(idInt, question, answer)
+		data.CreateQuestion(id, question, answer)
 		_, err = fmt.Fprintln(os.Stdout)
 		if err != nil {
 			return err
@@ -113,7 +112,6 @@ func runCommand(commandStr string) error {
 			return err
 		}
 		id = strings.TrimSuffix(id, "\n")
-		idInt, err := strconv.Atoi(id)
 		//question
 		_, err = fmt.Fprintln(os.Stdout, "Question: ")
 		if err != nil {
@@ -134,7 +132,7 @@ func runCommand(commandStr string) error {
 			return err
 		}
 		answer = strings.TrimSuffix(answer, "\n")
-		data.UpdateQuestion(idInt, question, answer)
+		data.UpdateQuestion(id, question, answer)
 		_, err = fmt.Fprintln(os.Stdout)
 		if err != nil {
 			return err
@@ -144,31 +142,13 @@ func runCommand(commandStr string) error {
 		data.ListQuestion()
 		return nil
 	case "question":
-		argsInt, err := strconv.Atoi(arrCommandStr[1])
-		if err != nil {
-			return err
-		}
-		data.GetDetailQuestion(argsInt)
+		data.GetDetailQuestion(arrCommandStr[1])
 		return nil
 	case "delete_question":
-		argsInt, err := strconv.Atoi(arrCommandStr[1])
-		if err != nil {
-			return err
-		}
-		data.DeleteQuestion(argsInt)
+		data.DeleteQuestion(arrCommandStr[1])
 		return nil
 	case "answer_question":
-		argsInt, err := strconv.Atoi(arrCommandStr[1])
-		if err != nil {
-			return err
-		}
-		if arrCommandStr[2] == "" {
-			_, err := fmt.Fprintln(os.Stderr, "Answer cannot be empty")
-			if err != nil {
-				return err
-			}
-		}
-		data.CheckTheAnswerIsCorrect(argsInt, arrCommandStr[2])
+		data.CheckTheAnswerIsCorrect(arrCommandStr[1], arrCommandStr[2])
 		return nil
 	default:
 		_, err := fmt.Fprintf(os.Stdout, "%s is unknown command\n", arrCommandStr[0])
