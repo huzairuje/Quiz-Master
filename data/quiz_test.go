@@ -250,7 +250,7 @@ A: %s`, no, question, answer)
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDetailQuestionAndNoIsEmpty calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDetailQuestionAndNoIsEmpty(t *testing.T) {
@@ -269,7 +269,7 @@ func TestDetailQuestionAndNoIsEmpty(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDetailQuestionAndNoIsZero calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDetailQuestionAndNoIsZero(t *testing.T) {
@@ -288,7 +288,7 @@ func TestDetailQuestionAndNoIsZero(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDetailQuestionAndQuestionIsNotFound calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDetailQuestionAndQuestionIsNotFound(t *testing.T) {
@@ -309,7 +309,7 @@ func TestDetailQuestionAndQuestionIsNotFound(t *testing.T) {
 
 //=====================================================DELETE===============================================
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDeletelQuestionSuccess calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDeletelQuestionSuccess(t *testing.T) {
@@ -328,7 +328,7 @@ func TestDeletelQuestionSuccess(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDeleteQuestionAndNoIsEmpty calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDeleteQuestionAndNoIsEmpty(t *testing.T) {
@@ -347,7 +347,7 @@ func TestDeleteQuestionAndNoIsEmpty(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDeleteQuestionAndNoIsZero calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDeleteQuestionAndNoIsZero(t *testing.T) {
@@ -366,7 +366,7 @@ func TestDeleteQuestionAndNoIsZero(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestDeleteQuestionAndQuestionIsNotFound calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestDeleteQuestionAndQuestionIsNotFound(t *testing.T) {
@@ -387,7 +387,7 @@ func TestDeleteQuestionAndQuestionIsNotFound(t *testing.T) {
 
 //=================================================CHECK QUESTION IS EXIST===============================================
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestCheckQuestionIsExistIsSuccess calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckQuestionIsExistIsSuccess(t *testing.T) {
@@ -406,7 +406,7 @@ func TestCheckQuestionIsExistIsSuccess(t *testing.T) {
 	}
 }
 
-// TestDetailQuestionSuccess calls data.CreateQuestionSuccess
+// TestCheckQuestionIsExistIsFalse calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckQuestionIsExistIsFalse(t *testing.T) {
@@ -427,7 +427,7 @@ func TestCheckQuestionIsExistIsFalse(t *testing.T) {
 
 //=======================================CHECK ANSWER==========================================================
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndCorrectIsSuccess calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndCorrectIsSuccess(t *testing.T) {
@@ -447,7 +447,7 @@ func TestCheckAnswerQuestionAndCorrectIsSuccess(t *testing.T) {
 	}
 }
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndInCorrectIsSuccess calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndInCorrectIsSuccess(t *testing.T) {
@@ -467,7 +467,7 @@ func TestCheckAnswerQuestionAndInCorrectIsSuccess(t *testing.T) {
 	}
 }
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndNoIsEmpty calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndNoIsEmpty(t *testing.T) {
@@ -487,7 +487,7 @@ func TestCheckAnswerQuestionAndNoIsEmpty(t *testing.T) {
 	}
 }
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndNoIsZero calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndNoIsZero(t *testing.T) {
@@ -507,7 +507,7 @@ func TestCheckAnswerQuestionAndNoIsZero(t *testing.T) {
 	}
 }
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndQuestionIsNotFound calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndQuestionIsNotFound(t *testing.T) {
@@ -527,7 +527,7 @@ func TestCheckAnswerQuestionAndQuestionIsNotFound(t *testing.T) {
 	}
 }
 
-// TestUpdateQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
+// TestCheckAnswerQuestionAndAnswerIsEmpty calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
 func TestCheckAnswerQuestionAndAnswerIsEmpty(t *testing.T) {
