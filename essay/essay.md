@@ -40,7 +40,7 @@ A common challenge with microservices architecture is the need to avoid XA trans
 In our case, if there were no funds, the Inventory Manager needs to subscribe to these events so it can undo the product reservation and let the customer know their order has been cancelled when a payment problem occurs. The key is that the Billing service does not know what steps need to be taken to roll back the order; it simply produces events indicating "paid" or "not paid." Clean and elegant!
 
 Single Request-Multi Response
-If you have ever used Uber or Lyft, you will have seen that the drivers react immediately if their phone dings with another customer in the area needing a ride. Those notifications go to all drivers in the area, and it's the first to respond that wins the ride/business. This is exactly how the Sol-Beer store delivery mechanism is intended to work. The ability to send an event to multiple clients and receive multiple responses is key to this use case and messaging is a perfect enabler. This diagram illustrates how this can be implemented:
+If you have ever used Uber or Lyft, you will have seen that the drivers react immediately if their phone dings with another customer in the area needing a ride. Those notifications go to all drivers in the area, and it's the first to respond that wins the ride/business. This is exactly how the commerce store delivery mechanism is intended to work. The ability to send an event to multiple clients and receive multiple responses is key to this use case and messaging is a perfect enabler. This diagram illustrates how this can be implemented:
 
 Messaging Patterns for Event-Driven Microservices
 
