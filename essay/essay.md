@@ -46,8 +46,6 @@ Messaging Patterns for Event-Driven Microservices
 
 Once the Inventory Manager has fulfilled the order, it sends an event to the topic "order/ship//". If you're wondering why we would include delivery zip in a topic name, that's because if each car subscribes to events for a certain geography, we have a clean routing mechanism so drivers won't be overwhelmed by events outside of their area. In this case, the Logistics Manager receives ship notifications and sends out an event indicating that it's looking to locate a delivery vehicle.
 
-Until now we've been using the JMS API as that is commonly used for communication between applications within an enterprise, but for a car or mobile device MQTT or WebSocket is more appropriate. Open APIs and standard wireline protocols make it easier to use the right tools for each job.
-
 A delivery vehicle (or the driver's mobile device) is presented with a notification that an order is ready for delivery. They choose to accept or deny the opportunity. As stated before, the Logistics service only needs a single accept, and for fairness, selects the driver who responded first.
 
 Publish/Subscribe
