@@ -309,10 +309,10 @@ func TestDetailQuestionAndQuestionIsNotFound(t *testing.T) {
 
 //=====================================================DELETE===============================================
 
-// TestDeletelQuestionSuccess calls data.CreateQuestionSuccess
+// TestDeleteQuestionSuccess calls data.CreateQuestionSuccess
 // with a No:, Question , and Answer checking
 // for a valid return value.
-func TestDeletelQuestionSuccess(t *testing.T) {
+func TestDeleteQuestionSuccess(t *testing.T) {
 	no := "1"
 	question := "what are the result of 1 + 1 ?"
 	answer := "2"
@@ -399,10 +399,8 @@ func TestCheckQuestionIsExistIsSuccess(t *testing.T) {
 	noInt, _ := strconv.Atoi(no)
 	responseCheck := CheckTheQuestionIsAlreadyExist(noInt)
 
-	trueResult := true
-
-	if responseCheck != trueResult {
-		t.Fatalf(`Fatal Error the result %t is not match for the want match %t`, responseCheck, trueResult)
+	if responseCheck != true {
+		t.Fatalf(`Fatal Error the result %t is not match for the want match %t`, responseCheck, true)
 	}
 }
 
@@ -418,10 +416,8 @@ func TestCheckQuestionIsExistIsFalse(t *testing.T) {
 	noInt, _ := strconv.Atoi("2")
 	responseCheck := CheckTheQuestionIsAlreadyExist(noInt)
 
-	trueResult := false
-
-	if responseCheck != trueResult {
-		t.Fatalf(`Fatal Error the result %t is not match for the want match %t`, responseCheck, trueResult)
+	if responseCheck != false {
+		t.Fatalf(`Fatal Error the result %t is not match for the want match %t`, responseCheck, false)
 	}
 }
 
