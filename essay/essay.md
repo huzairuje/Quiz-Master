@@ -18,7 +18,7 @@ your explanation.
 
 i will choose the **Event Driven Architecture** , for the leverage the power of event driven architecture microservices we can shift the thinking from *invoke the service* to *initiate and capture the events*, A systems publishing events that can be consumed by zero or more downstream services and interpreted within the context of each service. The amount of flexibility and decoupling this provides is really great. Let's take another look at the architecture behind an E-commerce with that in mind. 
 
-![flow data users and billing](/assets/images/img1.png)
+![flow data users and billing](https://github.com/huzairuje/Quiz-Master/blob/master/essay/assets/images/img1.png)
 
 the services are fully decoupled and no longer know about each other. 
 Our ecommerce site is now able to handle large demand spikes because the only services that need to be scaled are the WebApp, The other services can be scaled to average load as they no longer impact the customer's order experience. Let's look at the messaging patterns that make up our new event-driven microservices architecture.
